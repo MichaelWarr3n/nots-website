@@ -146,4 +146,29 @@
     background-color: #294898;
   }
 
+  @media only screen and (max-width: 700px) {
+
+    .modal {
+      width: 60vw;
+    }
+
+    .modal-body {
+      font-size: 14px;
+    }
+
+  }
+
+  @media only screen and (max-width: 350px) {
+
+    .modal-header {
+      font-size: 20px;
+      padding: 10px;
+    }
+
+    .modal-body {
+      padding: 10px;
+    }
+
+  }
+
 </style>

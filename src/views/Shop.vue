@@ -79,4 +79,24 @@ import Modal from '../components/Modal.vue';
   padding: 80px;
 }
 
+@media only screen and (max-width: 700px) {
+
+  .items-container {
+    width: 90%;
+    height: 90%;
+    padding: 40px;
+    gap: 40px;
+  }
+
+}
+
+@media only screen and (max-width: 465px) {
+
+  .items-container {
+    padding: 20px;
+    gap: 20px;
+  }
+
+}
+
 </style>

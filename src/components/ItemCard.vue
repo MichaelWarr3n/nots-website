@@ -41,18 +41,59 @@ export default {
 
 .image-container {
   height: 25vh;
+  max-width: 13vw;
   margin-top: 15px;
   pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .item img {
-  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .item p {
   font-family: 'Space Mono', monospace;
   margin: 10px 0;
   pointer-events: none;
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .item {
+    width: 22vw;
+  }
+
+  .image-container {
+    height: 20vh;
+    max-width: 20vw;
+  }
+  
+}
+
+@media only screen and (max-width: 700px) {
+
+  .item {
+    width: 32vw;
+  }
+
+  .image-container {
+    height: 20vh;
+    max-width: 30vw;
+  }
+
+}
+
+@media only screen and (max-width: 465px) {
+
+  .image-container {
+    height: 16vh;
+    max-width: 40vw;
+  }
+
 }
 
 </style>

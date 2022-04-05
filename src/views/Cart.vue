@@ -86,7 +86,7 @@ export default {
           <td></td>
           <td></td>
           <td>{{totalCheckoutValue}}</td>
-          <td><button>checkout &gt;</button></td>
+          <td><button>checkout</button></td>
         </tr>
       </table>
     </div>
@@ -187,6 +187,35 @@ export default {
 .quantity-button:hover, .table-footer td button:hover {
   cursor: pointer;
   background-color: #294898;
+}
+
+@media only screen and (max-width: 700px) {
+
+  .full-cart-container {
+    width: 90%;
+  }
+
+  .full-cart-container table {
+    font-size: 12px;
+  }
+
+  .item-row {
+    height: 15vh;
+  }
+
+  .item-row img {
+    height: 10vh;
+  }
+
+  .table-footer td button {
+    width: 95%;
+    padding: 5px;
+  }
+
+  .table-footer td {
+    padding: 5px;
+  }
+
 }
 
 </style>
